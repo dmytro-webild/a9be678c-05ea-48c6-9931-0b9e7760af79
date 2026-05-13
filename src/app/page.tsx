@@ -11,7 +11,7 @@ import FeatureBento from "@/components/sections/feature/FeatureBento";
 import TestimonialCardFifteen from "@/components/sections/testimonial/TestimonialCardFifteen";
 import ContactSplit from "@/components/sections/contact/ContactSplit";
 import FooterLogoReveal from "@/components/sections/footer/FooterLogoReveal";
-import { Award, TrendingUp, Trophy, Zap, Star, Dumbbell, Heart, Lightbulb, Compass, Mail, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Award, TrendingUp, Trophy, Zap, Star, Dumbbell, Heart, Lightbulb, Compass, Mail } from "lucide-react";
 
 export default function PersonalTrainerPage() {
     return (
@@ -31,36 +31,36 @@ export default function PersonalTrainerPage() {
                 <div id="nav" data-section="nav">
                     <NavbarStyleFullscreen
                         navItems={[
-                            { name: "Home", id: "home" },
-                            { name: "About", id: "about" },
-                            { name: "Certifications", id: "achievements" },
-                            { name: "Services", id: "services" },
+                            { name: "خانه", id: "home" },
+                            { name: "درباره ما", id: "about" },
+                            { name: "گواهینامه‌ها", id: "achievements" },
+                            { name: "خدمات", id: "services" },
                         ]}
-                        brandName="Personal Trainer"
-                        bottomLeftText="Certified Professional"
+                        brandName="مربی شخصی"
+                        bottomLeftText="متخصص معتبر"
                         bottomRightText="contact@trainer.com"
                     />
                 </div>
 
                 <div id="hero" data-section="hero">
                     <HeroSplitKpi
-                        title="Transform Your Body, Transform Your Life"
-                        description="Expert personal training designed for your goals. Whether you're starting your fitness journey or taking your performance to the next level, I provide personalized coaching, proven methods, and unwavering support to help you achieve lasting results."
+                        title="بدن خود را متحول کنید، زندگی خود را دگرگون کنید"
+                        description="تمرینات تخصصی شخصی طراحی شده برای اهداف شما. چه در حال شروع سفر تناسب اندام خود باشید و چه در حال رساندن عملکرد خود به سطح بعدی، من مربیگری شخصی، روش‌های اثبات‌شده و حمایت بی‌دریغ را برای کمک به شما در دستیابی به نتایج ماندگار ارائه می‌دهم."
                         background={{ variant: "rotated-rays-static-grid" }}
                         kpis={[
-                            { value: "500+", label: "Clients Transformed" },
-                            { value: "10+", label: "Years Experience" },
-                            { value: "95%", label: "Goal Achievement Rate" }
+                            { value: "۵۰۰+", label: "مشتری موفق" },
+                            { value: "۱۰+", label: "سال تجربه" },
+                            { value: "۹۵٪", label: "نرخ موفقیت در اهداف" }
                         ]}
                         enableKpiAnimation={true}
-                        tag="Professional Coach"
+                        tag="مربی حرفه‌ای"
                         tagIcon={Award}
                         imageSrc="https://img.b2bpic.net/premium-photo/portrait-men-happy-sports-court-with-squash-racket-fitness-game-exercise-performance-smile-athlete-people-equipment-play-match-club-tournament-practice-competition_590464-483720.jpg?id=382939786"
-                        imageAlt="Professional Personal Trainer"
+                        imageAlt="مربی شخصی حرفه‌ای"
                         imagePosition="right"
                         buttons={[
-                            { text: "Start Your Journey", href: "#about" },
-                            { text: "View Training Programs", href: "#services" }
+                            { text: "شروع سفر شما", href: "#about" },
+                            { text: "مشاهده برنامه‌ها", href: "#services" }
                         ]}
                         mediaAnimation="slide-up"
                     />
@@ -68,25 +68,25 @@ export default function PersonalTrainerPage() {
 
                 <div id="about" data-section="about">
                     <TextAbout
-                        title="My Commitment to Your Success: Every client deserves a personalized approach. With over a decade of experience in fitness coaching, I combine evidence-based training methods with genuine passion for helping you reach your potential. My philosophy centers on sustainable results, injury prevention, and building habits that last a lifetime."
+                        title="تعهد من به موفقیت شما: هر مشتری شایسته رویکردی شخصی است. با بیش از یک دهه تجربه در مربیگری تناسب اندام، من روش‌های تمرینی مبتنی بر شواهد را با اشتیاق واقعی برای کمک به شما در رسیدن به پتانسیل خود ترکیب می‌کنم. فلسفه من بر نتایج پایدار، پیشگیری از آسیب و ایجاد عاداتی است که یک عمر باقی می‌مانند."
                         useInvertedBackground={false}
                         buttons={[
-                            { text: "Learn My Story", href: "#achievements" },
-                            { text: "Explore Methods", href: "#philosophy" }
+                            { text: "داستان من", href: "#achievements" },
+                            { text: "روش‌های کار", href: "#philosophy" }
                         ]}
                     />
                 </div>
 
                 <div id="achievements" data-section="achievements">
                     <MetricCardOne
-                        title="Professional Credentials & Experience"
-                        description="Certified expertise in personal training and athletic development"
-                        tag="Qualifications"
+                        title="مدارک حرفه‌ای و تجربه"
+                        description="تخصص معتبر در آموزش شخصی و توسعه ورزشی"
+                        tag="مدارک"
                         tagIcon={TrendingUp}
                         metrics={[
-                            { id: "1", value: "150", title: "Certified Personal Trainer", description: "National Academy of Sports Medicine certification", icon: Trophy },
-                            { id: "2", value: "500", title: "Specializations", description: "Strength, conditioning, nutrition, mobility, recovery", icon: Zap },
-                            { id: "3", value: "950", title: "Success Stories", description: "Clients who achieved their fitness goals with guidance", icon: Star },
+                            { id: "1", value: "۱۵۰", title: "مربی شخصی معتبر", description: "گواهینامه آکادمی ملی پزشکی ورزشی", icon: Trophy },
+                            { id: "2", value: "۵۰۰", title: "تخصص‌ها", description: "قدرت، آمادگی جسمانی، تغذیه، تحرک، ریکاوری", icon: Zap },
+                            { id: "3", value: "۹۵۰", title: "داستان‌های موفقیت", description: "مشتریانی که با راهنمایی به اهداف خود رسیدند", icon: Star },
                         ]}
                         gridVariant="uniform-all-items-equal"
                         animationType="slide-up"
@@ -97,75 +97,75 @@ export default function PersonalTrainerPage() {
 
                 <div id="services" data-section="services">
                     <FeatureCardSeven
-                        title="Personalized Training Programs"
-                        description="Customized fitness solutions tailored to your unique goals and lifestyle"
-                        tag="Service Offerings"
+                        title="برنامه‌های آموزشی شخصی‌سازی شده"
+                        description="راه‌حل‌های تناسب اندام سفارشی متناسب با اهداف و سبک زندگی منحصر به فرد شما"
+                        tag="خدمات ما"
                         tagIcon={Dumbbell}
                         features={[
                             {
-                                title: "One-on-One Personal Training",                                description: "Individual coaching sessions focused entirely on your goals, form, and progression. Each workout is designed based on your fitness level, preferences, and objectives with real-time feedback and adjustments.",                                imageSrc: "https://img.b2bpic.net/free-photo/group-people-working-out-together-outdoors_23-2149891467.jpg?id=34137118",                                imageAlt: "One-on-one personal training session"
+                                title: "آموزش شخصی یک‌به‌یک",                                description: "جلسات مربیگری انفرادی که کاملاً بر اهداف، فرم و پیشرفت شما متمرکز است. هر تمرین بر اساس سطح تناسب اندام و اهداف شما با بازخورد و تنظیمات در زمان واقعی طراحی می‌شود.",                                imageSrc: "https://img.b2bpic.net/free-photo/group-people-working-out-together-outdoors_23-2149891467.jpg?id=34137118",                                imageAlt: "جلسه آموزشی شخصی یک‌به‌یک"
                             },
                             {
-                                title: "Small Group Training Classes",                                description: "Build community while reaching your fitness goals in small, focused groups. Receive personalized attention in a motivating environment with other like-minded individuals committed to transformation.",                                imageSrc: "https://img.b2bpic.net/premium-photo/coach-reviewing-playbook-with-team_1314467-168780.jpg?id=324598511",                                imageAlt: "Small group fitness class"
+                                title: "کلاس‌های آموزش گروهی کوچک",                                description: "در محیطی کوچک و متمرکز، در حالی که به اهداف تناسب اندام خود می‌رسید، جامعه بسازید. در محیطی انگیزشی با سایر افراد هم‌فکر که به تحول متعهد هستند، توجه شخصی دریافت کنید.",                                imageSrc: "https://img.b2bpic.net/premium-photo/coach-reviewing-playbook-with-team_1314467-168780.jpg?id=324598511",                                imageAlt: "کلاس تناسب اندام گروهی"
                             },
                             {
-                                title: "Online Coaching Programs",                                description: "Train from anywhere with customized workout plans, nutrition guidance, and video form checks. Stay connected with regular progress assessments and program adjustments based on your results and feedback.",                                imageSrc: "https://img.b2bpic.net/free-photo/people-training-athletics_23-2151077709.jpg?id=150856792",                                imageAlt: "Online fitness coaching platform"
+                                title: "برنامه‌های مربیگری آنلاین",                                description: "از هر کجا با برنامه‌های تمرینی سفارشی، راهنمایی‌های تغذیه‌ای و بررسی ویدئویی فرم بدن، تمرین کنید. با ارزیابی‌های منظم پیشرفت و تنظیمات برنامه بر اساس نتایج و بازخورد خود، در ارتباط بمانید.",                                imageSrc: "https://img.b2bpic.net/free-photo/people-training-athletics_23-2151077709.jpg?id=150856792",                                imageAlt: "پلتفرم مربیگری آنلاین"
                             }
                         ]}
                         textboxLayout="default"
                         animationType="slide-up"
                         useInvertedBackground={false}
                         buttons={[
-                            { text: "Book Consultation", href: "#contact" }
+                            { text: "رزرو مشاوره", href: "#contact" }
                         ]}
                     />
                 </div>
 
                 <div id="philosophy" data-section="philosophy">
                     <FeatureBento
-                        title="My Training Philosophy"
-                        description="Holistic approach to fitness and wellness"
-                        tag="Training Method"
+                        title="فلسفه آموزشی من"
+                        description="رویکردی جامع به تناسب اندام و سلامتی"
+                        tag="روش آموزش"
                         tagIcon={Compass}
                         features={[
                             {
-                                title: "Progressive Overload",                                description: "Systematically increase intensity and challenge to drive continuous improvement and prevent plateaus in your fitness journey",                                bentoComponent: "animated-bar-chart"
+                                title: "اضافه‌بار پیش‌رونده",                                description: "به‌طور سیستماتیک شدت و چالش را افزایش دهید تا پیشرفت مستمر داشته باشید و از توقف در مسیر تناسب اندام خود جلوگیری کنید",                                bentoComponent: "animated-bar-chart"
                             },
                             {
-                                title: "Functional Fitness",                                description: "Training that improves real-world strength, mobility, and movement patterns for better performance in daily life",                                bentoComponent: "3d-stack-cards",                                items: [
-                                    { icon: Dumbbell, title: "Strength", subtitle: "Build Power", detail: "Compound movements for lasting gains" },
-                                    { icon: Heart, title: "Endurance", subtitle: "Boost Stamina", detail: "Cardiovascular and muscular conditioning" },
-                                    { icon: Lightbulb, title: "Mobility", subtitle: "Improve Range", detail: "Enhanced flexibility and joint health" }
+                                title: "تناسب اندام کاربردی",                                description: "تمریناتی که قدرت، تحرک و الگوهای حرکتی واقعی را برای عملکرد بهتر در زندگی روزمره بهبود می‌بخشد",                                bentoComponent: "3d-stack-cards",                                items: [
+                                    { icon: Dumbbell, title: "قدرت", subtitle: "ساختن توان", detail: "حرکات ترکیبی برای دستاوردهای ماندگار" },
+                                    { icon: Heart, title: "استقامت", subtitle: "افزایش توان", detail: "آمادگی قلبی عروقی و عضلانی" },
+                                    { icon: Lightbulb, title: "تحرک", subtitle: "بهبود دامنه", detail: "افزایش انعطاف‌پذیری و سلامت مفاصل" }
                                 ]
                             },
                             {
-                                title: "Sustainable Habits",                                description: "Build consistent routines that fit your lifestyle and lead to long-term results, not quick fixes",                                bentoComponent: "timeline",                                heading: "Your Training Journey",                                subheading: "Three phases to transformation",                                items: [
-                                    { label: "Foundation", detail: "Building proper form and establishing baseline fitness" },
-                                    { label: "Progression", detail: "Gradually increasing intensity and complexity" },
-                                    { label: "Mastery", detail: "Peak performance and maintaining long-term results" }
+                                title: "عادات پایدار",                                description: "روتین‌های منظمی بسازید که با سبک زندگی شما مطابقت داشته باشد و منجر به نتایج طولانی‌مدت شود، نه راه‌حل‌های سریع",                                bentoComponent: "timeline",                                heading: "سفر آموزشی شما",                                subheading: "سه مرحله تا تحول",                                items: [
+                                    { label: "زیربنا", detail: "ساختن فرم مناسب و ایجاد آمادگی جسمانی پایه" },
+                                    { label: "پیشرفت", detail: "افزایش تدریجی شدت و پیچیدگی" },
+                                    { label: "تسلط", detail: "اوج عملکرد و حفظ نتایج طولانی‌مدت" }
                                 ],
-                                completedLabel: "Your transformation begins"
+                                completedLabel: "تحول شما آغاز می‌شود"
                             }
                         ]}
                         textboxLayout="default"
                         animationType="slide-up"
                         useInvertedBackground={true}
                         buttons={[
-                            { text: "Start Training", href: "#contact" }
+                            { text: "شروع تمرین", href: "#contact" }
                         ]}
                     />
                 </div>
 
                 <div id="testimonials" data-section="testimonials">
                     <TestimonialCardFifteen
-                        testimonial="Working with this trainer completely changed my relationship with fitness. The personalized approach, constant encouragement, and professional expertise made all the difference. I not only achieved my goals but discovered a passion for training I never knew I had."
+                        testimonial="کار با این مربی رابطه من با تناسب اندام را کاملاً تغییر داد. رویکرد شخصی، تشویق مداوم و تخصص حرفه‌ای تفاوت را ایجاد کرد. من نه‌تنها به اهدافم رسیدم، بلکه اشتیاقی به تمرین کشف کردم که هرگز نمی‌دانستم دارم."
                         rating={5}
-                        author="Jessica Chen, Fitness Enthusiast"
+                        author="جسیکا چن، علاقه‌مند به تناسب اندام"
                         avatars={[
-                            { src: "https://img.b2bpic.net/free-photo/portrait-young-handsome-sportsman-holds-hand-chin-dark-background_613910-5321.jpg", alt: "Jessica Chen" },
-                            { src: "https://img.b2bpic.net/free-photo/portrait-young-handsome-sportsman-holds-hand-chin-dark-background_613910-19200.jpg", alt: "Marcus R." },
-                            { src: "https://img.b2bpic.net/free-photo/masculanity-strength-power-concept-picture-handsome-fit-young-afro-american-bodybuilder-with-bald-head-smoothly-shaven-face-looking-camera-with-confident-serious-facial-expression_343059-336.jpg", alt: "David W." },
-                            { src: "https://img.b2bpic.net/free-photo/portrait-smiling-afro-american-sports-man-with-arms-folded-looking-camera_171337-8263.jpg", alt: "Alex K." }
+                            { src: "https://img.b2bpic.net/free-photo/portrait-young-handsome-sportsman-holds-hand-chin-dark-background_613910-5321.jpg", alt: "جسیکا چن" },
+                            { src: "https://img.b2bpic.net/free-photo/portrait-young-handsome-sportsman-holds-hand-chin-dark-background_613910-19200.jpg", alt: "مارکوس آر." },
+                            { src: "https://img.b2bpic.net/free-photo/masculanity-strength-power-concept-picture-handsome-fit-young-afro-american-bodybuilder-with-bald-head-smoothly-shaven-face-looking-camera-with-confident-serious-facial-expression_343059-336.jpg", alt: "دیوید دبلیو." },
+                            { src: "https://img.b2bpic.net/free-photo/portrait-smiling-afro-american-sports-man-with-arms-folded-looking-camera_171337-8263.jpg", alt: "الکس کی." }
                         ]}
                         ratingAnimation="slide-up"
                         avatarsAnimation="slide-up"
@@ -176,26 +176,26 @@ export default function PersonalTrainerPage() {
                 <div id="contact" data-section="contact">
                     <ContactSplit
                         background={{ variant: "plain" }}
-                        tag="Ready to Transform?"
-                        title="Start Your Fitness Journey Today"
-                        description="Take the first step toward the healthier, stronger version of yourself. Schedule a free consultation to discuss your goals, learn about personalized training options, and discover how we can work together to achieve results."
+                        tag="آماده تحول هستید؟"
+                        title="سفر تناسب اندام خود را امروز شروع کنید"
+                        description="اولین قدم را به سوی نسخه سالم‌تر و قوی‌تر خود بردارید. یک مشاوره رایگان برای بحث در مورد اهداف خود، یادگیری در مورد گزینه‌های تمرینی شخصی و کشف اینکه چگونه می‌توانیم برای دستیابی به نتایج با هم کار کنیم، برنامه‌ریزی کنید."
                         useInvertedBackground={false}
                         imageSrc="https://img.b2bpic.net/free-photo/front-view-man-with-swimming-equipment_23-2150465483.jpg"
-                        imageAlt="Fitness training inspiration"
+                        imageAlt="الهام‌بخش تمرینات تناسب اندام"
                         mediaPosition="right"
                         mediaAnimation="slide-up"
                         tagIcon={Mail}
-                        inputPlaceholder="your@email.com"
-                        buttonText="Get Started"
-                        termsText="We respect your privacy. Unsubscribe at any time."
+                        inputPlaceholder="ایمیل شما"
+                        buttonText="شروع کنید"
+                        termsText="ما به حریم خصوصی شما احترام می‌گذاریم. در هر زمان می‌توانید لغو اشتراک کنید."
                     />
                 </div>
 
                 <div id="footer" data-section="footer">
                     <FooterLogoReveal
-                        logoText="Personal Trainer"
-                        leftLink={{ text: "123 Fitness Way, Gym City", href: "#" }}
-                        rightLink={{ text: "Mon-Sun: 6am - 10pm", href: "#" }}
+                        logoText="مربی شخصی"
+                        leftLink={{ text: "خیابان ۱۲۳ تناسب اندام، شهر ورزش", href: "#" }}
+                        rightLink={{ text: "شنبه-پنجشنبه: ۶ صبح تا ۱۰ شب", href: "#" }}
                     />
                 </div>
             </ReactLenis>

@@ -10,7 +10,7 @@ import FeatureCardSeven from "@/components/sections/feature/FeatureCardSeven";
 import FeatureBento from "@/components/sections/feature/FeatureBento";
 import TestimonialCardFifteen from "@/components/sections/testimonial/TestimonialCardFifteen";
 import ContactSplit from "@/components/sections/contact/ContactSplit";
-import FooterCard from "@/components/sections/footer/FooterCard";
+import FooterLogoReveal from "@/components/sections/footer/FooterLogoReveal";
 import { Award, TrendingUp, Trophy, Zap, Star, Dumbbell, Heart, Lightbulb, Compass, Mail, Instagram, Twitter, Linkedin } from "lucide-react";
 
 export default function PersonalTrainerPage() {
@@ -103,22 +103,13 @@ export default function PersonalTrainerPage() {
                         tagIcon={Dumbbell}
                         features={[
                             {
-                                title: "One-on-One Personal Training",
-                                description: "Individual coaching sessions focused entirely on your goals, form, and progression. Each workout is designed based on your fitness level, preferences, and objectives with real-time feedback and adjustments.",
-                                imageSrc: "https://img.b2bpic.net/free-photo/group-people-working-out-together-outdoors_23-2149891467.jpg?id=34137118",
-                                imageAlt: "One-on-one personal training session"
+                                title: "One-on-One Personal Training",                                description: "Individual coaching sessions focused entirely on your goals, form, and progression. Each workout is designed based on your fitness level, preferences, and objectives with real-time feedback and adjustments.",                                imageSrc: "https://img.b2bpic.net/free-photo/group-people-working-out-together-outdoors_23-2149891467.jpg?id=34137118",                                imageAlt: "One-on-one personal training session"
                             },
                             {
-                                title: "Small Group Training Classes",
-                                description: "Build community while reaching your fitness goals in small, focused groups. Receive personalized attention in a motivating environment with other like-minded individuals committed to transformation.",
-                                imageSrc: "https://img.b2bpic.net/premium-photo/coach-reviewing-playbook-with-team_1314467-168780.jpg?id=324598511",
-                                imageAlt: "Small group fitness class"
+                                title: "Small Group Training Classes",                                description: "Build community while reaching your fitness goals in small, focused groups. Receive personalized attention in a motivating environment with other like-minded individuals committed to transformation.",                                imageSrc: "https://img.b2bpic.net/premium-photo/coach-reviewing-playbook-with-team_1314467-168780.jpg?id=324598511",                                imageAlt: "Small group fitness class"
                             },
                             {
-                                title: "Online Coaching Programs",
-                                description: "Train from anywhere with customized workout plans, nutrition guidance, and video form checks. Stay connected with regular progress assessments and program adjustments based on your results and feedback.",
-                                imageSrc: "https://img.b2bpic.net/free-photo/people-training-athletics_23-2151077709.jpg?id=150856792",
-                                imageAlt: "Online fitness coaching platform"
+                                title: "Online Coaching Programs",                                description: "Train from anywhere with customized workout plans, nutrition guidance, and video form checks. Stay connected with regular progress assessments and program adjustments based on your results and feedback.",                                imageSrc: "https://img.b2bpic.net/free-photo/people-training-athletics_23-2151077709.jpg?id=150856792",                                imageAlt: "Online fitness coaching platform"
                             }
                         ]}
                         textboxLayout="default"
@@ -138,27 +129,17 @@ export default function PersonalTrainerPage() {
                         tagIcon={Compass}
                         features={[
                             {
-                                title: "Progressive Overload",
-                                description: "Systematically increase intensity and challenge to drive continuous improvement and prevent plateaus in your fitness journey",
-                                bentoComponent: "animated-bar-chart"
+                                title: "Progressive Overload",                                description: "Systematically increase intensity and challenge to drive continuous improvement and prevent plateaus in your fitness journey",                                bentoComponent: "animated-bar-chart"
                             },
                             {
-                                title: "Functional Fitness",
-                                description: "Training that improves real-world strength, mobility, and movement patterns for better performance in daily life",
-                                bentoComponent: "3d-stack-cards",
-                                items: [
+                                title: "Functional Fitness",                                description: "Training that improves real-world strength, mobility, and movement patterns for better performance in daily life",                                bentoComponent: "3d-stack-cards",                                items: [
                                     { icon: Dumbbell, title: "Strength", subtitle: "Build Power", detail: "Compound movements for lasting gains" },
                                     { icon: Heart, title: "Endurance", subtitle: "Boost Stamina", detail: "Cardiovascular and muscular conditioning" },
                                     { icon: Lightbulb, title: "Mobility", subtitle: "Improve Range", detail: "Enhanced flexibility and joint health" }
                                 ]
                             },
                             {
-                                title: "Sustainable Habits",
-                                description: "Build consistent routines that fit your lifestyle and lead to long-term results, not quick fixes",
-                                bentoComponent: "timeline",
-                                heading: "Your Training Journey",
-                                subheading: "Three phases to transformation",
-                                items: [
+                                title: "Sustainable Habits",                                description: "Build consistent routines that fit your lifestyle and lead to long-term results, not quick fixes",                                bentoComponent: "timeline",                                heading: "Your Training Journey",                                subheading: "Three phases to transformation",                                items: [
                                     { label: "Foundation", detail: "Building proper form and establishing baseline fitness" },
                                     { label: "Progression", detail: "Gradually increasing intensity and complexity" },
                                     { label: "Mastery", detail: "Peak performance and maintaining long-term results" }
@@ -211,15 +192,10 @@ export default function PersonalTrainerPage() {
                 </div>
 
                 <div id="footer" data-section="footer">
-                    <FooterCard
+                    <FooterLogoReveal
                         logoText="Personal Trainer"
-                        copyrightText="© 2025 Professional Personal Training. All rights reserved."
-                        socialLinks={[
-                            { icon: Instagram, href: "https://instagram.com", ariaLabel: "Instagram" },
-                            { icon: Twitter, href: "https://twitter.com", ariaLabel: "Twitter" },
-                            { icon: Linkedin, href: "https://linkedin.com", ariaLabel: "LinkedIn" },
-                            { icon: Mail, href: "mailto:contact@trainer.com", ariaLabel: "Email" }
-                        ]}
+                        leftLink={{ text: "123 Fitness Way, Gym City", href: "#" }}
+                        rightLink={{ text: "Mon-Sun: 6am - 10pm", href: "#" }}
                     />
                 </div>
             </ReactLenis>
